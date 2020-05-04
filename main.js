@@ -2177,6 +2177,23 @@ else if (radioValue =="yes"){
     QStoreroom_c2.yes = "yes"
     QStoreroom_c2.no = ""
 }
+// question c3
+var QStoreroom_c3 = new Object();
+var radioValue = $("input[name='storeroom_Qc3']:checked").val();
+QStoreroom_c3.answer = radioValue;
+// console.log(QStoreroom_c3.answer)
+if (QStoreroom_c3.answer == "no"){
+    var RCA = $("#RCA_storeroom_Qc3").val();
+    var AB = $("#AB_storeroom_Qc3").val();
+    QStoreroom_c3.AB = AB
+    QStoreroom_c3.RCA = RCA
+    QStoreroom_c3.yes = ""
+    QStoreroom_c3.no = "no"
+}
+else if (radioValue =="yes"){
+    QStoreroom_c3.yes = "yes"
+    QStoreroom_c3.no = ""
+}
 // question d1
 var QStoreroom_d1 = new Object();
 var radioValue = $("input[name='storeroom_Qd1']:checked").val();
@@ -2408,6 +2425,96 @@ else if (radioValue =="yes"){
     QStoreroom_f4.yes = "yes"
     QStoreroom_f4.no = ""
 }
+
+// question f1
+var QStoreroom_g1 = new Object();
+var radioValue = $("input[name='storeroom_Qg1']:checked").val();
+QStoreroom_g1.answer = radioValue;
+// console.log(QStoreroom_g1.answer)
+if (QStoreroom_g1.answer == "no"){
+    var RCA = $("#RCA_storeroom_Qg1").val();
+    var AB = $("#AB_storeroom_Qg1").val();
+    QStoreroom_g1.AB = AB
+    QStoreroom_g1.RCA = RCA
+    QStoreroom_g1.yes = ""
+    QStoreroom_g1.no = "no"
+}
+else if (radioValue =="yes"){
+    QStoreroom_g1.yes = "yes"
+    QStoreroom_g1.no = ""
+}
+
+// question g2
+var QStoreroom_g2 = new Object();
+var radioValue = $("input[name='storeroom_Qg2']:checked").val();
+QStoreroom_g2.answer = radioValue;
+// console.log(QStoreroom_g2.answer)
+if (QStoreroom_g2.answer == "no"){
+    var RCA = $("#RCA_storeroom_Qg2").val();
+    var AB = $("#AB_storeroom_Qg2").val();
+    QStoreroom_g2.AB = AB
+    QStoreroom_g2.RCA = RCA
+    QStoreroom_g2.yes = ""
+    QStoreroom_g2.no = "no"
+}
+else if (radioValue =="yes"){
+    QStoreroom_g2.yes = "yes"
+    QStoreroom_g2.no = ""
+}
+
+// question g3
+var QStoreroom_g3 = new Object();
+var radioValue = $("input[name='storeroom_Qg3']:checked").val();
+QStoreroom_g3.answer = radioValue;
+// console.log(QStoreroom_g3.answer)
+if (QStoreroom_g3.answer == "no"){
+    var RCA = $("#RCA_storeroom_Qg3").val();
+    var AB = $("#AB_storeroom_Qg3").val();
+    QStoreroom_g3.AB = AB
+    QStoreroom_g3.RCA = RCA
+    QStoreroom_g3.yes = ""
+    QStoreroom_g3.no = "no"
+}
+else if (radioValue =="yes"){
+    QStoreroom_g3.yes = "yes"
+    QStoreroom_g3.no = ""
+}
+
+// question g4
+var QStoreroom_g4 = new Object();
+var radioValue = $("input[name='storeroom_Qg4']:checked").val();
+QStoreroom_g4.answer = radioValue;
+// console.log(QStoreroom_g4.answer)
+if (QStoreroom_g4.answer == "no"){
+    var RCA = $("#RCA_storeroom_Qg4").val();
+    var AB = $("#AB_storeroom_Qg4").val();
+    QStoreroom_g4.AB = AB
+    QStoreroom_g4.RCA = RCA
+    QStoreroom_g4.yes = ""
+    QStoreroom_g4.no = "no"
+}
+else if (radioValue =="yes"){
+    QStoreroom_g4.yes = "yes"
+    QStoreroom_g4.no = ""
+}
+
+// question g5
+var QStoreroom_g5 = new Object();
+var radioValue = $("input[name='storeroom_Qg5']:checked").val();
+QStoreroom_g5.answer = radioValue;
+// console.log(QStoreroom_g5.answer)
+if (QStoreroom_g5.answer == "no"){
+    var RCA = $("#RCA_storeroom_Qg5").val();
+    var AB = $("#AB_storeroom_Qg5").val();
+    QStoreroom_g5.AB = AB
+    QStoreroom_g5.RCA = RCA
+    QStoreroom_g5.yes = ""
+    QStoreroom_g5.no = "no"
+}
+else if (radioValue =="yes"){
+    QStoreroom_g5.yes = "yes"
+    QStoreroom_g5.no = ""
+}
 // // question fill
 // var QStoreroom_fill = new Object();
 // var radioValue = $("input[name='storeroom_Qfill']:checked").val();
@@ -2587,6 +2694,7 @@ else if (radioValue =="yes"){
     ['c', ''],
     ['c1','', QStoreroom_c1.yes ,QStoreroom_c1.no, QStoreroom_c1.RCA,QStoreroom_c1.AB],
     ['c2','', QStoreroom_c2.yes,QStoreroom_c2.no,QStoreroom_c2.RCA,QStoreroom_c2.AB],
+    ['c3','', QStoreroom_c3.yes,QStoreroom_c3.no,QStoreroom_c3.RCA,QStoreroom_c3.AB],
     ['d', ''],
     ['d1','', QStoreroom_d1.yes ,QStoreroom_d1.no, QStoreroom_d1.RCA,QStoreroom_d1.AB],
     ['d2','', QStoreroom_d2.yes,QStoreroom_d2.no,QStoreroom_d2.RCA,QStoreroom_d2.AB],
@@ -2599,10 +2707,17 @@ else if (radioValue =="yes"){
     ['e5','', QStoreroom_e5.yes,QStoreroom_e5.no,QStoreroom_e5.RCA,QStoreroom_e5.AB],
     ['e6','', QStoreroom_e6.yes,QStoreroom_e6.no,QStoreroom_e6.RCA,QStoreroom_e6.AB],
     ['f', ''],
-    ['f1','', QStoreroom_f1.yfs ,QStoreroom_f1.no, QStoreroom_f1.RCA,QStoreroom_f1.AB],
-    ['f2','', QStoreroom_f2.yfs,QStoreroom_f2.no,QStoreroom_f2.RCA,QStoreroom_f2.AB],
-    ['f3','', QStoreroom_f3.yfs,QStoreroom_f3.no,QStoreroom_f3.RCA,QStoreroom_f3.AB],
-    ['f4','', QStoreroom_f4.yfs,QStoreroom_f4.no,QStoreroom_f4.RCA,QStoreroom_f4.AB],
+    ['f1','', QStoreroom_f1.yes ,QStoreroom_f1.no, QStoreroom_f1.RCA,QStoreroom_f1.AB],
+    ['f2','', QStoreroom_f2.yes,QStoreroom_f2.no,QStoreroom_f2.RCA,QStoreroom_f2.AB],
+    ['f3','', QStoreroom_f3.yes,QStoreroom_f3.no,QStoreroom_f3.RCA,QStoreroom_f3.AB],
+    ['f4','', QStoreroom_f4.yes,QStoreroom_f4.no,QStoreroom_f4.RCA,QStoreroom_f4.AB],
+    ['g', ''],
+    ['g1','', QStoreroom_g1.yes ,QStoreroom_g1.no, QStoreroom_g1.RCA,QStoreroom_g1.AB],
+    ['g2','', QStoreroom_g2.yes,QStoreroom_g2.no,QStoreroom_g2.RCA,QStoreroom_g2.AB],
+    ['g3','', QStoreroom_g3.yes,QStoreroom_g3.no,QStoreroom_g3.RCA,QStoreroom_g3.AB],
+    ['g4','', QStoreroom_g4.yes,QStoreroom_g4.no,QStoreroom_g4.RCA,QStoreroom_g4.AB],
+    ['g5','', QStoreroom_g5.yes,QStoreroom_g5.no,QStoreroom_g5.RCA,QStoreroom_g5.AB]
+    
   ];
  var csv = '';
     data.forEach(function(row) {
