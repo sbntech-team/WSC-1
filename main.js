@@ -2535,6 +2535,8 @@ else if (radioValue =="yes"){
 
   var data = [
     ['Location:',$('#location').val()],
+    ['BLK:',$('#blk').val()],
+    ['UNIT:',$('#unit').val()],
     ['','','YES','NO','Recommendation/corrective Actions','Action by'],
     ['1', 'GENERAL SURROUNDING AREA'],
     ['a', ''],
